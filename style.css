@@ -119,23 +119,54 @@ footer
     display: inline;
 }
 
+/*ACA EMPIEZA BEBIDAS*/
 
 .rectangulo
 {
-    display: flex;   
-    width: 800px;
-    height: 80px;
-    border-radius: 12rem;
-    background-color: beige;
+    display: grid;   
+    width: 700px;
+    height: 60px;       
+    align-content: center;
     justify-content: center;
-    align-items: center;
     position: relative;
-    left: 25%;
-    right: 25%;
+    margin-left: 480px;
+    text-decoration:underline;
+    justify-items: center;    
 }
 
-p.bebidas
-{   
-    font-size: 50px;
-    color: #684c29;
+p.titulo
+{      
+    font-size: 30px;
+    color: #000000;
+    padding-top: .5em;
+    padding-bottom: 45px;
+    margin: 0em;
+}
+
+.Tarjetero
+{
+    display: grid;
+    /*background-image: url(./imagenes/backgroundbebidas.jpg);*/
+    width: 1600px;
+    height: 900px;
+    justify-items: center;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.tarjeta
+{     
+    width: 350px;
+    height: 250px;
+    background-color: #e9d7c8;
+    border-radius: 1.5rem; 
+    text-align: center;
+    font-style: oblique;  
+    text-decoration:underline;
+    border: darkblue;
+  
 }
