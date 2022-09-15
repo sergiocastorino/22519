@@ -1,141 +1,197 @@
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* TODO ESTO ES EL HEADER*/
+header {
+  background-color:rgba(233, 215, 200, 0.8);
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px; 
+ }
+
+.nav-menu {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2em;
+     margin-right: 2em;
+}
+ 
+#foto-logo {
+  width: 35px;
+
+}
+
+.titulo1 {
+  font-size: 30px;
+  margin-left: 2em;
+}
+
+.nav-link {
+  transition: 0,7s ease;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+
+}
+
+
+
+@media (max-width:1000px) {
+  .hamburger {
+    display:block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #e9d7c8;
+    width: 100%;
+    text-align: center;
+    transition: 0,3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .titulo1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* TODO ESTO ES EL HEADER*/
+
 body
 {
-    background-image: url(".//imagenes/background.jpg");
-}
-.nav-list1 {
-    display: flex;
-    margin: 0;
-    padding: 1rem 2rem;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #e9d7c8;
-    box-shadow: 0px 0px 10px rgb(179, 179, 179);
-  }
- 
-  #logo {
-    width: 40px;
-    padding-right: 10px;
-  }
-
-  .nav-list1 li {
-  list-style: none;
-  margin-right: 2rem;
-  padding-right: 1em;
-  font-size: 20px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav-list1 li:first-child  {
-    margin-right: auto;
-    margin-left: 2rem;
-    font-size: 2rem;
-    font-family: 'Monsieur La Doulaise', cursive;
-  }
-
-  .nav-normal a:hover {
-    color: #8c6a4d;
-  }
-  
-  .button1 {
-    font-size: 1rem;
-    background-color: #8c6a4d;
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  .button1:hover{
-    background-color: #c9a78a;
-  }
-
-
-  .Carrusel
-  {
-      display: flex;
-      justify-content: center;
-      padding-top: 10px;
-      padding-left: 10px;    
-      left: 50%;
-      right: 50%;
-  }
-
-/* 
-LO COMENTO YA QUE ESTO LO SAQUÉ POR
-#botonwpp
-{
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-}
-#menufixed
-{
-    position: fixed;
-    top: 0px;
-    right: 0px;
-} */
-
-.botonera2
-{
-    display: flex;
-    font-size: 35px;
-    justify-content: space-around;
-    background-color: #58aa6d;
-    
+    background-image: url(".//imagenes/background-galaxy.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
-.nosotros
-{    
-    padding: 0px;
-    margin: 0px;
-    background-color: #aa8058;
-    border: 8px solid cornflowerblue;
+
+.carousel {
+  background-color: #e9d7c8 ;
+  height: 500px;
+  box-shadow: 10px 0px 40px rgb(0, 0, 0);
+  margin-top: 80px;
 }
 
-.contacto2
-{      
-    padding: 0px;
-    margin: 0px;
-    background-color: #aa8058;
-    border: 8px solid cornflowerblue;
+.container {
+  background-color: #e9d7c8 ;
+  height: 500px;
+  box-shadow: 10px 0px 40px rgb(0, 0, 0);
+  margin-top: 10px;
 }
 
-#parrafo1
-{
-    border: 5px outset rgb(255, 0, 0);
-    background-color: rgb(146, 203, 223);    
-    text-align: center;
-}
-footer
-{
-    display: inline;
-}
 
+/*ACA EMPIEZA BEBIDAS*/
 
 .rectangulo
 {
-    display: flex;   
-    width: 800px;
-    height: 80px;
-    border-radius: 12rem;
-    background-color: beige;
+    display: grid;   
+    width: 700px;
+    height: 60px;       
+    align-content: center;
     justify-content: center;
-    align-items: center;
     position: relative;
-    left: 25%;
-    right: 25%;
+    margin-left: 480px;
+    text-decoration:underline;
+    justify-items: center;   
+    margin-top: 80px; 
 }
 
-p.bebidas
-{   
-    font-size: 50px;
-    color: #684c29;
+p.titulo
+{      
+    font-size: 30px;
+    color: #000000;
+    padding-top: .5em;
+    padding-bottom: 45px;
+    margin: 0em;
+}
+
+.Tarjetero
+{
+    display: grid;
+    /*background-image: url(./imagenes/backgroundbebidas.jpg);*/
+    width: 1600px;
+    height: 900px;
+    justify-items: center;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.tarjeta
+{     
+    width: 350px;
+    height: 250px;
+    background-color: #e9d7c8;
+    border-radius: 1.5rem; 
+    text-align: center;
+    font-style: oblique;  
+    text-decoration:underline;
+    border: darkblue;
+  
 }
