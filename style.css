@@ -8,6 +8,7 @@
 /* TODO ESTO ES EL HEADER*/
 header {
   background-color:rgba(233, 215, 200, 0.8);
+  Height: 70px;
   position: fixed;
   width: 100%;
   top:0;
@@ -30,7 +31,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px; 
- }
+}
 
 .nav-menu {
      display: flex;
@@ -40,6 +41,22 @@ a {
      margin-right: 2em;
 }
  
+/* Sombreado de seleccion en menu */
+
+.nav-menu-link:hover {
+
+  background-color: rgba(0, 0, 0, 0.219);
+  transition: 0.5s;
+
+}
+
+.nav-menu-link{
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+/* ---------------- */ 
+
 #foto-logo {
   width: 35px;
 
@@ -93,15 +110,15 @@ a {
   }
 
   .nav-menu {
+    flex-direction: column;
     position: fixed;
     left: -100%;
     top: 70px;
     gap: 0;
-    flex-direction: column;
     background-color: #e9d7c8;
     width: 100%;
     text-align: center;
-    transition: 0,3s;
+    transition: 0,5s;
   }
   .nav-item {
     margin: 16px 0;
@@ -116,15 +133,29 @@ a {
     margin-right: auto;
   }
 
+  /* Sombreado de seleccion en Menu */
+  .nav-menu-link:hover,   
+  .nav-menu-link:active{
+    
+    background-color: rgba(85, 80, 72, 0.363);
+    left: 0;
+    color:rgb(253, 234, 206);
+    transition: 0.5s;
+    
+  }
+
 }
 
 /* TODO ESTO ES EL HEADER*/
 
 body
 {
-    background-image: url(".//imagenes/background-galaxy.jpeg");
+    background-image: url("imagenes/backgroundGalaxia.jpg");
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+   
+    width: 100%;
+    z-index: -3;
 }
 
 
