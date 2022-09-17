@@ -5,9 +5,17 @@
   box-sizing: border-box;
 }
 
+body  {
+  background: #1e130c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
 /* TODO ESTO ES EL HEADER*/
 header {
   background-color:rgba(233, 215, 200, 0.8);
+  Height: 70px;
   position: fixed;
   width: 100%;
   top:0;
@@ -30,7 +38,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px; 
- }
+}
 
 .nav-menu {
      display: flex;
@@ -40,6 +48,22 @@ a {
      margin-right: 2em;
 }
  
+/* Sombreado de seleccion en menu */
+
+.nav-menu-link:hover {
+
+  background-color: rgba(0, 0, 0, 0.219);
+  transition: 0.5s;
+
+}
+
+.nav-menu-link{
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+/* ---------------- */ 
+
 #foto-logo {
   width: 35px;
 
@@ -75,6 +99,71 @@ a {
 }
 
 
+/* ------ Carrusel ------ */
+
+
+.slider-frame {
+	width: 750px;
+  height: auto;
+	margin: 100px auto 0;
+	overflow: hidden;
+  border: 3px double black;
+  background-color: rgb(3, 3, 3);
+  background-position: center;
+}
+
+.slider-frame .carrusel {
+	display: flex;
+	padding: 0;
+	width: 1000%;
+	
+	animation: slide 60s infinite alternate ease-in-out;
+}
+
+.slider-frame .imagenCarrusel {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame .imgCarr {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	5% {margin-left: 0;}
+	
+	10% {margin-left: -100%;}
+	15% {margin-left: -100%;}
+	
+	20% {margin-left: -200%;}
+	25% {margin-left: -200%;}
+	
+	30% {margin-left: -300%;}
+	35% {margin-left: -300%;}
+
+  40% {margin-left: -400%;}
+	45% {margin-left: -400%;}
+
+  50% {margin-left: -500%;}
+	55% {margin-left: -500%;}
+
+  60% {margin-left: -600%;}
+	65% {margin-left: -600%;}
+
+  70% {margin-left: -700%;}
+	75% {margin-left: -700%;}
+
+  80% {margin-left: -800%;}
+	85% {margin-left: -800%;}
+
+  90% {margin-left: -900%;}
+	95% {margin-left: -900%;}
+
+}
+
+/* ----------------------------- */ 
+
 
 @media (max-width:1000px) {
   .hamburger {
@@ -93,15 +182,15 @@ a {
   }
 
   .nav-menu {
+    flex-direction: column;
     position: fixed;
     left: -100%;
     top: 70px;
     gap: 0;
-    flex-direction: column;
     background-color: #e9d7c8;
     width: 100%;
     text-align: center;
-    transition: 0,3s;
+    transition: 0,5s;
   }
   .nav-item {
     margin: 16px 0;
@@ -116,17 +205,29 @@ a {
     margin-right: auto;
   }
 
+  /* Sombreado de seleccion en Menu */
+  .nav-menu-link:hover,   
+  .nav-menu-link:active{
+    
+    background-color: rgba(85, 80, 72, 0.363);
+    left: 0;
+    color:rgb(253, 234, 206);
+    transition: 0.5s;
+    
+  }
+
+  /** Carrusel **/
+
+  .slider-frame{
+    margin: 120 auto 0;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+}
+
 }
 
 /* TODO ESTO ES EL HEADER*/
-
-body
-{
-    background-image: url(".//imagenes/background-galaxy.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
 
 .carousel {
   background-color: #e9d7c8 ;
@@ -141,6 +242,7 @@ body
   box-shadow: 10px 0px 40px rgb(0, 0, 0);
   margin-top: 10px;
 }
+
 
 /*ACA EMPIEZA BEBIDAS*/
 
