@@ -92,6 +92,68 @@ a {
 }
 
 
+/* ------ Carrusel ------ */
+
+
+.slider-frame {
+	width: 750px;
+    height: auto;
+	margin: 100px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 1000%;
+	
+	animation: slide 60s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	5% {margin-left: 0;}
+	
+	10% {margin-left: -100%;}
+	15% {margin-left: -100%;}
+	
+	20% {margin-left: -200%;}
+	25% {margin-left: -200%;}
+	
+	30% {margin-left: -300%;}
+	35% {margin-left: -300%;}
+
+    40% {margin-left: -400%;}
+	45% {margin-left: -400%;}
+
+    50% {margin-left: -500%;}
+	55% {margin-left: -500%;}
+
+    60% {margin-left: -600%;}
+	65% {margin-left: -600%;}
+
+    70% {margin-left: -700%;}
+	75% {margin-left: -700%;}
+
+    80% {margin-left: -800%;}
+	85% {margin-left: -800%;}
+
+    90% {margin-left: -900%;}
+	95% {margin-left: -900%;}
+
+}
+
+/* ----------------------------- */ 
+
 
 @media (max-width:1000px) {
   .hamburger {
