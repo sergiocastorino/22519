@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+body  {
+  background: #1e130c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
 /* TODO ESTO ES EL HEADER*/
 header {
   background-color:rgba(233, 215, 200, 0.8);
@@ -97,12 +104,15 @@ a {
 
 .slider-frame {
 	width: 750px;
-    height: auto;
+  height: auto;
 	margin: 100px auto 0;
 	overflow: hidden;
+  border: 3px double black;
+  background-color: rgb(3, 3, 3);
+  background-position: center;
 }
 
-.slider-frame ul {
+.slider-frame .carrusel {
 	display: flex;
 	padding: 0;
 	width: 1000%;
@@ -110,12 +120,12 @@ a {
 	animation: slide 60s infinite alternate ease-in-out;
 }
 
-.slider-frame li {
+.slider-frame .imagenCarrusel {
 	width: 100%;
 	list-style: none;
 }
 
-.slider-frame img {
+.slider-frame .imgCarr {
 	width: 100%;
 }
 
@@ -132,22 +142,22 @@ a {
 	30% {margin-left: -300%;}
 	35% {margin-left: -300%;}
 
-    40% {margin-left: -400%;}
+  40% {margin-left: -400%;}
 	45% {margin-left: -400%;}
 
-    50% {margin-left: -500%;}
+  50% {margin-left: -500%;}
 	55% {margin-left: -500%;}
 
-    60% {margin-left: -600%;}
+  60% {margin-left: -600%;}
 	65% {margin-left: -600%;}
 
-    70% {margin-left: -700%;}
+  70% {margin-left: -700%;}
 	75% {margin-left: -700%;}
 
-    80% {margin-left: -800%;}
+  80% {margin-left: -800%;}
 	85% {margin-left: -800%;}
 
-    90% {margin-left: -900%;}
+  90% {margin-left: -900%;}
 	95% {margin-left: -900%;}
 
 }
@@ -209,25 +219,15 @@ a {
   /** Carrusel **/
 
   .slider-frame{
-    margin: auto auto 0;
+    margin: 120 auto 0;
     width: 700px;
     height: auto;
+    overflow: hidden;
 }
 
 }
 
 /* TODO ESTO ES EL HEADER*/
-
-body
-{
-    background-image: url("imagenes/backgroundGalaxia.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    width: 100%;
-    z-index: -3;
-}
-
 
 .carousel {
   background-color: #e9d7c8 ;
@@ -242,6 +242,7 @@ body
   box-shadow: 10px 0px 40px rgb(0, 0, 0);
   margin-top: 10px;
 }
+
 
 /*ACA EMPIEZA BEBIDAS*/
 
