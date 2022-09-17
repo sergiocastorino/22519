@@ -206,6 +206,14 @@ a {
     
   }
 
+  /** Carrusel **/
+
+  .slider-frame{
+    margin: auto auto 0;
+    width: 700px;
+    height: auto;
+}
+
 }
 
 /* TODO ESTO ES EL HEADER*/
