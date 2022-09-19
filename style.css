@@ -1,128 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Pacifico&display=swap');
 
-body
-
-{
-    background-image: url(./imagenes/background.jpeg);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.nav-list1 {
-    display: flex;
-    margin: 0;
-    padding: 1rem 2rem;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #e9d7c8;
-    box-shadow: 0px 0px 10px rgb(179, 179, 179);
-  }
- 
-  #logo {
-    width: 40px;
-    padding-right: 10px;
-  }
+body  {
+  background: #1e130c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-  .nav-list1 li {
+
+/* TODO ESTO ES EL HEADER*/
+header {
+  background-color:rgba(233, 215, 200, 0.8);
+  Height: 70px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+}
+
+li {
   list-style: none;
-  margin-right: 2rem;
-  padding-right: 1em;
   font-size: 20px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav-list1 li:first-child  {
-    margin-right: auto;
-    margin-left: 2rem;
-    font-size: 2rem;
-    font-family: 'Monsieur La Doulaise', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px; 
+}
+
+.nav-menu {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2em;
+     margin-right: 2em;
+}
+ 
+/* Sombreado de seleccion en menu */
+
+.nav-menu-link:hover {
+
+  background-color: rgba(0, 0, 0, 0.219);
+  transition: 0.5s;
+
+}
+
+.nav-menu-link{
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+/* ---------------- */ 
+
+#foto-logo {
+  width: 35px;
+
+}
+
+.titulo1 {
+  font-size: 30px;
+  margin-left: 2em;
+}
+
+.nav-link {
+  transition: 0,7s ease;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+
+}
+
+
+/* ------ Carrusel ------ */
+
+
+.slider-frame {
+	width: 750px;
+  height: auto;
+	margin: 100px auto 0;
+	overflow: hidden;
+  border: 3px double black;
+  background-color: rgb(3, 3, 3);
+  background-position: center;
+}
+
+.slider-frame .carrusel {
+	display: flex;
+	padding: 0;
+	width: 1000%;
+	
+	animation: slide 60s infinite alternate ease-in-out;
+}
+
+.slider-frame .imagenCarrusel {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame .imgCarr {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	5% {margin-left: 0;}
+	
+	10% {margin-left: -100%;}
+	15% {margin-left: -100%;}
+	
+	20% {margin-left: -200%;}
+	25% {margin-left: -200%;}
+	
+	30% {margin-left: -300%;}
+	35% {margin-left: -300%;}
+
+  40% {margin-left: -400%;}
+	45% {margin-left: -400%;}
+
+  50% {margin-left: -500%;}
+	55% {margin-left: -500%;}
+
+  60% {margin-left: -600%;}
+	65% {margin-left: -600%;}
+
+  70% {margin-left: -700%;}
+	75% {margin-left: -700%;}
+
+  80% {margin-left: -800%;}
+	85% {margin-left: -800%;}
+
+  90% {margin-left: -900%;}
+	95% {margin-left: -900%;}
+
+}
+
+/* ----------------------------- */ 
+
+
+@media (max-width:1000px) {
+  .hamburger {
+    display:block;
   }
 
-  .nav-normal a:hover {
-    color: #8c6a4d;
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
   }
   
-  .button1 {
-    font-size: 1rem;
-    background-color: #8c6a4d;
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
   }
-  
-  .button1:hover{
-    background-color: #c9a78a;
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
   }
 
-
-  .Carrusel
-  {
-      display: flex;
-      justify-content: center;
-      padding-top: 10px;
-      padding-left: 10px;    
-      left: 50%;
-      right: 50%;
-  }
-
-/* 
-LO COMENTO YA QUE ESTO LO SAQUÉ POR
-#botonwpp
-{
+  .nav-menu {
+    flex-direction: column;
     position: fixed;
-    bottom: 0px;
-    left: 0px;
-}
-#menufixed
-{
-    position: fixed;
-    top: 0px;
-    right: 0px;
-} */
-
-.botonera2
-{
-    display: flex;
-    font-size: 35px;
-    justify-content: space-around;
-    background-color: #58aa6d;
-    
-}
-
-.nosotros
-{    
-    padding: 0px;
-    margin: 0px;
-    background-color: #aa8058;
-    border: 8px solid cornflowerblue;
-}
-
-.contacto2
-{      
-    padding: 0px;
-    margin: 0px;
-    background-color: #aa8058;
-    border: 8px solid cornflowerblue;
-}
-
-#parrafo1
-{
-    border: 5px outset rgb(255, 0, 0);
-    background-color: rgb(146, 203, 223);    
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    background-color: #e9d7c8;
+    width: 100%;
     text-align: center;
-}
-footer
-{
-    display: inline;
+    transition: 0,5s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .titulo1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Sombreado de seleccion en Menu */
+  .nav-menu-link:hover,   
+  .nav-menu-link:active{
+    
+    background-color: rgba(85, 80, 72, 0.363);
+    left: 0;
+    color:rgb(253, 234, 206);
+    transition: 0.5s;
+    
+  }
+
+  /** Carrusel **/
+
+  .slider-frame{
+    margin: 120 auto 0;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
 }
 
-/* ACA EMPIEZA BEBIDAS */
+}
 
+/* TODO ESTO ES EL HEADER*/
+
+.carousel {
+  background-color: #e9d7c8 ;
+  height: 500px;
+  box-shadow: 10px 0px 40px rgb(0, 0, 0);
+  margin-top: 80px;
+}
+
+.container {
+  background-color: #e9d7c8 ;
+  height: 500px;
+  box-shadow: 10px 0px 40px rgb(0, 0, 0);
+  margin-top: 10px;
+}
+
+
+
+/*ACA EMPIEZA BEBIDAS*/
+
+.rectangulo
 {
-  
+    display: grid;   
+    width: 700px;
+    height: 60px;       
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 480px;
+    text-decoration:underline;
+    justify-items: center;   
+    margin-top: 80px; 
+}
+
+p.titulo
+{      
+    font-size: 30px;
+    color: #000000;
+    padding-top: .5em;
+    padding-bottom: 45px;
+    margin: 0em;
+}
+
+.Tarjetero
+{
+    display: grid;
+    /*background-image: url(./imagenes/backgroundbebidas.jpg);*/
+    width: 1600px;
+    height: 900px;
+    justify-items: center;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.tarjeta
+{     
+    width: 350px;
+    height: 250px;
+    background-color: #e9d7c8;
+    border-radius: 1.5rem; 
+    text-align: center;
+    font-style: oblique;  
+    text-decoration:underline;
+    border: darkblue;
+
+}
+.formulario
+{
+  padding:  2em;
+  border-top: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  background-image: radial-gradient(circle at 50% -20.71%, #aab274 0, #aca966 10%, #ad9f59 20%, #ad944b 30%, #ad883d 40%, #ad7a2f 50%, #ad6b23 60%, #ad5d1c 70%, #ad4e19 80%, #ae3f1b 90%, #ae2e1f 100%);
+  display: flex;
+  min-height: 50vh;
+  background-size: 5px;
+  background-position: 0 0, 10px 10px;
+  text-align: center;
+}
+.contenedor_form
+{
+  background-color: #fff;
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  padding: 1em 2em;
+  border-radius: 15px;
+  box-shadow: 15px 15px 25px -2px rgb(0 0 0 / 90%); 
+}
+h2
+{ 
+  text-decoration: underline;  
+  font-style: oblique;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.form_1
+{
+  position: relative;
+  border: none;
+  display: grid;
+  margin-top: 20px;
+  gap: 50px;  
+}
+.form_input
+{ 
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%; 
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1.5px solid #9a8478;
+  outline: none;
+  padding-bottom: 0;   
+}
+.form_input:focus + .form_label
+{
+  transform: translateY(-30px);
+}
+.form_label
+{  
+  margin-top: 4px;
+  color: #5757577e;
+  cursor: pointer;
+  position: absolute;
+  left: 1px;
+  transform: translateY(-5px); 
+  transition: transform .6seg;
+}
+.form_submit
+{
+  margin-top: 0;
+  padding: 10px; 
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  background-color: #9a8478; 
+}
+h3
+{
+  font-size: 16px;
+  padding: 0%;
+  margin-top: 0;
+}
+.mensajero
+{  
+  margin-top: 15px; 
+  margin-bottom: 0px;
+  width: 100%;
+  height: 200px;  
 }

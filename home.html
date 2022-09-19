@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/75a592b408.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./imagenes/Iconocafe.png" type="image/x-icon">
+    <title>GalaxyCoffee</title>
 </head>
 
 <body>
-        <title>Galxy Coffee</title>
-       
-        <header>
-            <nav id="navegation1">
-                <ul class="nav-list1">      
-                    <li><a href="./home.html" class="bebidas" ><img id="logo" src=".//imagenes/Logo.png" alt="Cafelogo">Jardín del Café</a></li>  
-                    <li><a href=".//bebidas.html" class="bebidas" >Bebidas</a></li>
-                    <li><a href=".//historia.html" class="historia">Historia</a></li>
-                    <li><a href="./Cafeterias.html" class="cafeterias">Caferetias</a></li>
-                    <li><a href=".//Mapa.html" class="mapa">Mapa</a></li>
-                    <li><a href=".//Contacto.html"><button class="button1">Contacto</button></a></li>            
-                </ul>    
-            </nav>
-        </header>
+    
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="titulo1"><img src=".//imagenes/Logo.png" id="foto-logo">Galaxy Coffee</a>
+            <ul class="nav-menu">                          
+                <li class="nav-item"><a href=".//bebidas.html" class="nav-menu-link nav-link" >Nuestro Menú</a></li>
+                <li class="nav-item"><a href=".//SobreNosotros.html" class="nav-menu-link nav-link" >Sobre Nosotros</a></li>
+                <li class="nav-item"><a href=".//historia.html" class="nav-menu-link nav-link">Historia</a></li>
+                <li class="nav-item"><a href="./Sucursales.html" class="nav-menu-link nav-link">Sucursales</a></li>
+                <li class="nav-item"><a href=".//Contacto.html" class="nav-menu-link nav-link">Contacto</a></li>            
+            </ul>    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Carrusel de imagenes -->
+        <section>
+            <div class="slider-frame">
+                <ul class="carrusel">
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/1.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr"src="Imagenes/Carrusel/2.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/13.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/12.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/5.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/6.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/7.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/8.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/9.jpg" alt="" ></li>
+                    <li class="imagenCarrusel"><img class="imgCarr" src="Imagenes/Carrusel/10.jpg" alt="" ></li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <p>ESTO ES OTRA SECCIÓN, PUEDE IR CUALQUIER COSA</p>
+            </div>
+        </section>
+
+                <!-- ACA METO EL FORM PARA PROBAR -->
+                <form class="formulario">                          
+                    <div class="contenedor_form">
+                      <h2 >Contactanos:</h2>
+                        <div class="form_1">
+                            <div>
+                            <input type="text" id="nombre" class="form_input" placeholder=" ">
+                            <label for="nombre" class="form_label">Nombre</label>
+                            <span class="form_line"></span>                            
+                            </div> 
+                            <div>
+                            <input type="email" id="email" class="form_input" placeholder=" ">
+                            <label for="email" class="form_label">Email</label>
+                            <span class="form_line"></span>                            
+                            </div> 
+                            <div>
+                            <input type="text" id="telefono" class="form_input" placeholder=" ">
+                            <label for="telefono" class="form_label">Telefono</label>
+                            <span class="form_line"></span>
+                            </div>    
+                            <div>
+                                <h3>Mensaje:</h3>
+                                <input type="text" id="mensaje" class="mensajero">
+                            </div>                       
+                            <div>
+                            <input type="submit" class="form_submit" value="Enviar">
+                            </div>
+                        </div>
+                                            
+                    </div>                     
+                </form>
+           
         
-        <div class="Carrusel">
-           <img src=".//imagenes/carrusel1.jpg" alt="">
-           <iframe width="600" height="600" src="https://www.youtube.com/embed/NryesQJFhH0" title="Videos de cafe humeante sobre granos de cafe deliciosos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div>
-            <p id="parrafo1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi repudiandae error consequuntur eum <br>
-            dignissimos cupiditate officiis, sapiente amet eligendi quia delectus, cumque earum beatae, neque voluptatibus expedita soluta! Dolore, neque?
-            </p>
-        <div>
-        <div class="botonera2">
-                <div class="but1">Bebidas</div>
-                <div class="but2">Historia</div>
-                <div class="but3">Cafeterias</div>
-                <div class="but4">Mapa</div>
-                <div class="but5">Contacto</div>
-         </div>
-        <footer>
-      
-        <div class="nosotros">
-        <p>NOSOTROS... Lorem ipsum dolor sit amet consectetur <br>
-        adipisicing elit. Assumenda quam quis, non nihil at totam? <br>
-        Sapiente, commodi sunt exercitationem odio<br>
-        repudiandae quas doloremque neque dignissimos enim.</p>
-        </div>
-        <div class="contacto2">
-        <p>CONTACTO, sit amet consectetur adipisicing elit. Voluptatem ea facilis, officiis at in sint quia numquam ullam eius repellat quam nobis,
-            explicabo sapiente iste incidunt blanditiis praesentium error voluptatibus!</p>
-        </div>
-        </footer>   
 
     </main>
-    
-    
-    
+
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
