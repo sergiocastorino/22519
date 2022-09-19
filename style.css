@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Pacifico&display=swap');
 
 * {
   padding: 0;
@@ -244,7 +245,6 @@ a {
 }
 
 
-/*ACA EMPIEZA BEBIDAS*/
 
 /*ACA EMPIEZA BEBIDAS*/
 
@@ -296,5 +296,88 @@ p.titulo
     font-style: oblique;  
     text-decoration:underline;
     border: darkblue;
-  
+
+}
+.formulario
+{
+  padding:  2em;
+  border-top: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  background-image: radial-gradient(circle at 50% -20.71%, #aab274 0, #aca966 10%, #ad9f59 20%, #ad944b 30%, #ad883d 40%, #ad7a2f 50%, #ad6b23 60%, #ad5d1c 70%, #ad4e19 80%, #ae3f1b 90%, #ae2e1f 100%);
+  display: flex;
+  min-height: 50vh;
+  background-size: 5px;
+  background-position: 0 0, 10px 10px;
+  text-align: center;
+}
+.contenedor_form
+{
+  background-color: #fff;
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  padding: 1em 2em;
+  border-radius: 15px;
+  box-shadow: 15px 15px 25px -2px rgb(0 0 0 / 90%); 
+}
+h2
+{ 
+  text-decoration: underline;  
+  font-style: oblique;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.form_1
+{
+  position: relative;
+  border: none;
+  display: grid;
+  margin-top: 20px;
+  gap: 50px;  
+}
+.form_input
+{ 
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%; 
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1.5px solid #9a8478;
+  outline: none;
+  padding-bottom: 0;   
+}
+.form_input:focus + .form_label
+{
+  transform: translateY(-30px);
+}
+.form_label
+{  
+  margin-top: 4px;
+  color: #5757577e;
+  cursor: pointer;
+  position: absolute;
+  left: 1px;
+  transform: translateY(-5px); 
+  transition: transform .6seg;
+}
+.form_submit
+{
+  margin-top: 0;
+  padding: 10px; 
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  background-color: #9a8478; 
+}
+h3
+{
+  font-size: 16px;
+  padding: 0%;
+  margin-top: 0;
+}
+.mensajero
+{  
+  margin-top: 15px; 
+  margin-bottom: 0px;
+  width: 100%;
+  height: 200px;  
 }
