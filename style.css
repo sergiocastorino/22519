@@ -271,7 +271,7 @@ p.titulo
     margin: 0em;
 }
 
-.Tarjetero
+.Tarjetero 
 {
     display: grid;
     /*background-image: url(./imagenes/backgroundbebidas.jpg);*/
@@ -303,16 +303,17 @@ p.titulo
   padding:  2em;
   border-top: 10px;
   font-family: 'Noto Sans', sans-serif;
-  background-image: radial-gradient(circle at 50% -20.71%, #aab274 0, #aca966 10%, #ad9f59 20%, #ad944b 30%, #ad883d 40%, #ad7a2f 50%, #ad6b23 60%, #ad5d1c 70%, #ad4e19 80%, #ae3f1b 90%, #ae2e1f 100%);
   display: flex;
   min-height: 50vh;
   background-size: 5px;
   background-position: 0 0, 10px 10px;
-  text-align: center;
+  text-align: center;  
 }
+
+
 .contenedor_form
 {
-  background-color: #fff;
+  background-image: radial-gradient(circle at 50% 50%, #d5af58 0, #d3a04c 16.67%, #cb8b39 33.33%, #bc6e20 50%, #ad5106 66.67%, #a33700 83.33%, #9e2003 100%);
   margin: auto;
   width: 90%;
   max-width: 600px;
@@ -334,7 +335,7 @@ h2
   border: none;
   display: grid;
   margin-top: 20px;
-  gap: 50px;  
+  gap: 40px;  
 }
 .form_input
 { 
@@ -353,7 +354,7 @@ h2
 .form_label
 {  
   margin-top: 4px;
-  color: #5757577e;
+  color: #000000;  
   cursor: pointer;
   position: absolute;
   left: 1px;
@@ -373,11 +374,15 @@ h3
   font-size: 16px;
   padding: 0%;
   margin-top: 0;
+  margin-bottom: 0%;
+  border: none;
 }
-.mensajero
-{  
-  margin-top: 15px; 
+textarea
+{
+  font-size: 22px;
+  margin-top: 10px; 
   margin-bottom: 0px;
   width: 100%;
-  height: 200px;  
+  height: 200px;   
+  outline: none;
 }
