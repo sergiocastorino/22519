@@ -34,6 +34,7 @@ a {
 }
 
 .navbar {
+  
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -42,6 +43,7 @@ a {
 }
 
 .nav-menu {
+  
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -55,7 +57,7 @@ a {
 
   background-color: rgba(0, 0, 0, 0.219);
   transition: 0.5s;
-
+  
 }
 
 .nav-menu-link{
@@ -199,6 +201,7 @@ a {
 
   .nav-menu.active {
     left: 0;
+    
   }
 
   .titulo1 {
@@ -257,11 +260,10 @@ a {
     width: 700px;
     height: 60px;       
     align-content: center;
-    justify-content: center;
-    position: relative;
+    justify-content: center;    
     margin-left: 480px;    
     justify-items: center;   
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 h1{
@@ -321,11 +323,11 @@ h6{
   margin-left: 12px;
   width: 180px;  
 }
-#separador{
+.separador{
   padding: 0px;
-  margin: 0px;
+  margin-top: 350px;
   width: 1662px;
-  transform: translateY(350px);
+  
 }
 
 /*****************************************ACA EMPIEZA COMIDAS*********************************/
@@ -341,20 +343,17 @@ h6{
   position: relative;
   margin-left: 480px;    
   justify-items: center;   
-  margin-top: 80px;
-  transform: translateY(250px);
+  /* margin-top: 20px;   */
 }
 
-.tit1{
-  
+.tit1{  
   text-decoration: underline;
   text-decoration-color:#000000;  
   font-family: 'Josefin Sans', sans-serif;      
   font-size: 48px;
   color: #ffffff;
-  padding-top: .75em;
   padding-bottom: 45px;
-  margin: 0em;
+  margin-top: 0px;
 }
 
 h6{  
@@ -364,9 +363,8 @@ color: #833e1c;
 text-decoration: underline;
 }
 
-
 .Tarjetero2{
-  transform: translateY(250px);
+  margin-top: ;
   display: grid;    
   width: 1600px;
   height: 900px;
@@ -380,9 +378,10 @@ text-decoration: underline;
   gap: 20px;
   word-wrap: normal;
 }
-#separador2{
+.separador2{
   width: 1662px;
-  transform: translateY(600px);
+  margin-top: 350px;
+  margin-bottom: 0;
 }
 
 
