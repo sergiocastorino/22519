@@ -402,11 +402,11 @@ textarea
 
 }
 
-@media (max-width:600px){
+/* @media (max-width:600px){
 .Tarjetero{
     grid-template-columns: auto auto;
   }
-}
+} */
 
 .rectangulo {
   display: grid;
