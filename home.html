@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/75a592b408.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Contacto.css">   
+    <link rel="stylesheet" href="./style.css">    
     <link rel="shortcut icon" href="./imagenes/Iconocafe.png" type="image/x-icon">
+   
     <title>GalaxyCoffee</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a href="home.html" class="titulo1"><img src=".//imagenes/Logo.png" id="foto-logo">Galaxy Coffee</a>
+            <a href="home.html" class="tituloNav"><img src=".//imagenes/Logo.png" id="foto-logo">Galaxy Coffee</a>
             <ul class="nav-menu">                          
                 <li class="nav-item"><a href=".//bebidas.html" class="nav-menu-link nav-link" >Nuestro Menú</a></li>
-                <li class="nav-item"><a href="#sobre-nosotros-home" class="nav-menu-link nav-link" >Sobre Nosotros</a></li>
+                <li class="nav-item"><a href="./SobreNosotros.html" class="nav-menu-link nav-link" >Sobre Nosotros</a></li>
                 <li class="nav-item"><a href="./Sucursales.html" class="nav-menu-link nav-link">Sucursales</a></li>
-                <li class="nav-item"><a href=".//Contacto.html" class="contacto">Contacto</a></li>            
+                <li class="nav-item"><a href=".//Contacto.html" class="contacto5">Contacto</a></li>            
             </ul>    
             <div class="hamburger">
                 <span class="bar"></span>
@@ -31,7 +31,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="mainHome">
         <!-- Carrusel de imagenes -->
         <section>
             <div class="slider-frame">
@@ -60,54 +60,96 @@
             </div>
         </section>
 
+
+
+
+
         <section class="seccion" id="resumen-bebidas-home">
             <h1> Algunas de Nuestras Especialidades</h1>
             <div id="seccion-menu">
-                <div class="bebida"><img src=".//imagenes/Smoothie1.png" alt="Smoothie"><div>Smoothie</div></div>
-                <div class="bebida"><img src="./imagenes/Irlandes1.png" alt="Irlandes"><div>Irlandes</div></div>
-                <div class="bebida"><img src="./imagenes/selvanegra.png" alt="Smoothie"><div>Selva Negra</div></div>
-                <div class="bebida"><img src="./imagenes/Cheesk.png" alt="Smoothie"><div>Cheesecake</div></div>
-            </div>
-            <a href=".//SobreNosotros.html"><button class="mas-info">Nuestro Menú Completo</button></a>
-        </section>
-
-        <!-- ACA METO EL FORM PARA PROBAR -->
-        <section class="seccion" id="contacto1">
-            <form class="formulario">                          
-                <div class="contenedor_form">
-                    <h2 >Contactanos:</h2>
-                    <div class="form_1">
-                        <div>
-                        <input type="text" id="nombre" class="form_input">
-                        <label for="nombre" class="form_label">Nombre</label>
-                        <span class="form_line"></span>                            
-                        </div> 
-                        <div>
-                        <input type="email" id="email" class="form_input">
-                        <label for="email" class="form_label">Email</label>
-                        <span class="form_line"></span>                            
-                        </div> 
-                        <div>
-                        <input type="text" id="telefono" class="form_input">
-                        <label for="telefono" class="form_label">Telefono</label>
-                        <span class="form_line"></span>
-                        </div>    
-                        <div>
-                            <h3>Mensaje:</h3>                               
-                            <textarea name="mensaje" id="message" cols="30" rows="10"></textarea>
-                        </div>                       
-                        <div>
-                        <input type="submit" class="form_submit" value="Enviar">
-                        </div>
+                <div class="bebida">
+                    <div>
+                        <p class="nombre-bebida">Smoothie</p>
+                        <img src=".//imagenes/Smoothie1.png" alt="Smoothie"></div>
+                    <div>
+                        <ul class="list-ingredientes">
+                            <li>Cafe</li>
+                            <li>Leche</li>
+                            <li>Chocolate</li>
+                        </ul>
                     </div>
-                                        
-                </div>                     
-            </form>      
-        </section>       
+                </div>
+                <div class="bebida">
+                    <div>
+                        <p class="nombre-bebida">Irlandes</p>
+                        <img src="./imagenes/Irlandes1.png" alt="Irlandes">
+                    </div>
+                    <div>
+                        <ul class="list-ingredientes">
+                            <li>Cafe</li>
+                            <li>Leche</li>
+                            <li>Chocolate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bebida">
+                    <div>
+                        <p class="nombre-bebida">Selva Negra</p>
+                        <img src="./imagenes/selvanegra.png" alt="Selva Negra">
+                    </div>
+                    <div>
+                        <ul class="list-ingredientes">
+                            <li>Cafe</li>
+                            <li>Leche</li>
+                            <li>Chocolate</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bebida">
+                    <div>
+                        <p class="nombre-bebida">Cheesecake</p>
+                        <img src="./imagenes/Cheesk.png" alt="Smoothie">
+                    </div>
+                    <div>
+                        <ul class="list-ingredientes">
+                            <li>Cafe</li>
+                            <li>Leche</li>
+                            <li>Chocolate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href=".//bebidas.html"><button class="mas-info">Nuestro Menú Completo</button></a>     
+
+        </section>
+        
+        
     </main>
     
-    <footer>
+    <footer class="footer">
+        <div class="footerIzquierda">
+            <img src="./imagenes/Logos/GalaxyLogo1.png" class="logoFooter" alt="">
+                
+            <ul class="telefonos">
+                    <h2 class="h2Telefonos">Telefonos:</h2>
+                    <li><i class="fa-solid fa-phone fa-2xl"></i></i>0800-999-cafe<br>
+                    <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>11-1234-5678
+                </ul>
+        </div>
+        <div class="derecha">
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>  Siguenos en Facebook </li>
+                    <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram fa-2xl"></i></i></a>  Siguenos en Instagram</li>
+                    <li><a href="https://twitter.com/?lang=es"> <i class="fa-brands fa-twitter fa-2xl"></i></a>  Siguenos en Twitter</li>
+                    <li><a href="https://www.linkedin.com/home"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>  Siguenos en Linkedin</li>                
+                </ul>
+        </div>         
     </footer>
-
+    <div>
+        <p class="copyright"> &copy;2022 SoniaValeriaSergio.org</p>     
+    </div>
+    <script src="https://kit.fontawesome.com/960792dab7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/75a592b408.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
